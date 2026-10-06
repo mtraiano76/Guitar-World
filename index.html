@@ -1,265 +1,580 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet" />
+
+    <link href="styles.css" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
     <title>Guitar World</title>
 </head>
 
 <body>
-    <header>
-        <section class="inicio" id="inicio">
-            <div class="inicio-contenido">
-                <span class="inicio-subtitulo">
-                    TU PASIÓN. TU SONIDO.
-                </span>
-                <h1>
-                    ENCONTRÁ<br>
-                    <strong>TU SONIDO</strong>
-                </h1>
-                <p>
-                    Guitarras, bajos y accesorios para quienes
-                    viven la música.
-                </p>
-                <div class="inicio-botones">
-                    <a href="#guitarras" class="btn-principal">
-                        VER PRODUCTOS →
-                    </a>
-                    <a href="#contacto" class="btn-secundario">
-                        CONTACTANOS
-                    </a>
-                </div>
-            </div>
-            <div class="inicio-imagen">
-                <img src="images/home.jpg" alt="Guitarra eléctrica">
-            </div>
-        </section>
-    </header>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
 
     <nav class="navbar">
+
         <div class="logo">
             <span>GUITAR</span><strong>WORLD</strong>
         </div>
-        <ul class="nav-links">
+
+        <ul class="nav-links" id="nav-links">
             <li><a href="#inicio">INICIO</a></li>
             <li><a href="#guitarras">PRODUCTOS</a></li>
             <li><a href="#nosotros">RESEÑAS</a></li>
             <li><a href="#contacto">CONTACTO</a></li>
         </ul>
+
+        <div class="nav-icons">
+            <!-- Podés agregar tus iconos acá -->
+        </div>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+            ☰
+        </button>
+
     </nav>
 
-    <main>
-        <section class="productos" id="guitarras">
-            <div class="titulo-seccion">
-                <span>INSTRUMENTOS</span>
-                <h2>Nuestras guitarras</h2>
+
+    <!-- =========================
+         INICIO / HERO
+    ========================== -->
+
+    <header>
+
+        <section class="inicio" id="inicio">
+
+            <div class="inicio-contenido">
+
+                <span class="inicio-subtitulo">
+                    TU PASIÓN. TU SONIDO.
+                </span>
+
+                <h1>
+                    ENCONTRÁ<br>
+                    <strong>TU SONIDO</strong>
+                </h1>
+
+                <p>
+                    Guitarras, bajos y accesorios para quienes
+                    viven la música.
+                </p>
+
+                <div class="inicio-botones">
+
+                    <a href="#guitarras" class="btn-principal">
+                        VER PRODUCTOS →
+                    </a>
+
+                    <a href="#contacto" class="btn-secundario">
+                        CONTACTANOS
+                    </a>
+
+                </div>
+
             </div>
-            <div class="productos-container">
-                <article class="card-producto">
-                    <div class="imagen-producto">
-                        <img src="images/fender.jpg" alt="Guitarra eléctrica">
-                    </div>
-                    <div class="info-producto">
-                        <span>ELÉCTRICA</span>
-                        <h3>Fender Stratocaster</h3>
-                        <p>$1.250.000</p>
-                        <button>Ver producto</button>
-                    </div>
-                </article>
 
-                <article class="card-producto">
-                    <div class="imagen-producto">
-                        <img src="images/gibson.jpg" alt="Guitarra Gibson">
-                    </div>
-                    <div class="info-producto">
-                        <span>ELÉCTRICA</span>
-                        <h3>Gibson Les Paul</h3>
-                        <p>$1.850.000</p>
-                        <button>Ver producto</button>
-                    </div>
-                </article>
+            <div class="inicio-imagen">
 
-                <article class="card-producto">
-                    <div class="imagen-producto">
-                        <img src="images/FLYING.jpg" alt="Guitarra Gibson">
-                    </div>
-                    <div class="info-producto">
-                        <span>ELÉCTRICA</span>
-                        <h3>Gibson Flying V</h3>
-                        <p>$1.950.000</p>
-                        <button>Ver producto</button>
-                    </div>
-                </article>
+                <img src="images/home.jpg" alt="Guitarra eléctrica">
 
-                <article class="card-producto">
-                    <div class="imagen-producto">
-                        <img src="images/martin.jpeg" alt="Guitarra acústica">
-                    </div>
-                    <div class="info-producto">
-                        <span>ACÚSTICA</span>
-                        <h3>Martin D-28</h3>
-                        <p>$980.000</p>
-                        <button>Ver producto</button>
-                    </div>
-                </article>
-
-                <article class="card-producto">
-                    <div class="imagen-producto">
-                        <img src="images/c40.jpg" alt="Guitarra clásica">
-                    </div>
-                    <div class="info-producto">
-                        <span>CLÁSICA</span>
-                        <h3>Yamaha C40</h3>
-                        <p>$420.000</p>
-                        <button>Ver producto</button>
-                    </div>
-                </article>
             </div>
+
         </section>
 
-        <section class="resenas" id="nosotros">
-            <div class="resenas-titulo">
-                <span>OPINIONES</span>
-                <h2>LO QUE DICEN<br><strong>NUESTROS CLIENTES</strong></h2>
+    </header>
+
+
+    <!-- =========================
+         CONTENIDO PRINCIPAL
+    ========================== -->
+
+    <main>
+
+        <!-- PRODUCTOS -->
+
+        <section class="productos" id="guitarras">
+
+            <div class="titulo-seccion">
+
+                <span>INSTRUMENTOS</span>
+
+                <h2>Nuestras guitarras</h2>
+
             </div>
+
+
+            <div class="productos-container">
+
+                <article class="card-producto">
+
+                    <div class="imagen-producto">
+                        <img src="images/fender.jpg" alt="Guitarra Fender Stratocaster">
+                    </div>
+
+                    <div class="info-producto">
+
+                        <span>ELÉCTRICA</span>
+
+                        <h3>Fender Stratocaster</h3>
+
+                        <p>$1.250.000</p>
+
+                        <button type="button">
+                            Ver producto
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card-producto">
+
+                    <div class="imagen-producto">
+                        <img src="images/gibson.jpg" alt="Guitarra Gibson Les Paul">
+                    </div>
+
+                    <div class="info-producto">
+
+                        <span>ELÉCTRICA</span>
+
+                        <h3>Gibson Les Paul</h3>
+
+                        <p>$1.850.000</p>
+
+                        <button type="button">
+                            Ver producto
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card-producto">
+
+                    <div class="imagen-producto">
+                        <img src="images/FLYING.jpg" alt="Guitarra Gibson Flying V">
+                    </div>
+
+                    <div class="info-producto">
+
+                        <span>ELÉCTRICA</span>
+
+                        <h3>Gibson Flying V</h3>
+
+                        <p>$1.950.000</p>
+
+                        <button type="button">
+                            Ver producto
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card-producto">
+
+                    <div class="imagen-producto">
+                        <img src="images/martin.jpeg" alt="Guitarra acústica Martin D-28">
+                    </div>
+
+                    <div class="info-producto">
+
+                        <span>ACÚSTICA</span>
+
+                        <h3>Martin D-28</h3>
+
+                        <p>$980.000</p>
+
+                        <button type="button">
+                            Ver producto
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card-producto">
+
+                    <div class="imagen-producto">
+                        <img src="images/c40.jpg" alt="Guitarra clásica Yamaha C40">
+                    </div>
+
+                    <div class="info-producto">
+
+                        <span>CLÁSICA</span>
+
+                        <h3>Yamaha C40</h3>
+
+                        <p>$420.000</p>
+
+                        <button type="button">
+                            Ver producto
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             RESEÑAS
+        ========================== -->
+
+        <section class="resenas" id="nosotros">
+
+            <div class="resenas-titulo">
+
+                <span>OPINIONES</span>
+
+                <h2>
+                    LO QUE DICEN<br>
+                    <strong>NUESTROS CLIENTES</strong>
+                </h2>
+
+            </div>
+
+
             <div class="resenas-grid">
+
                 <article class="resena-card">
+
                     <div class="resena-top">
-                        <div class="avatar">MG</div>
+
+                        <div class="avatar">
+                            MG
+                        </div>
+
                         <div>
                             <h3>Marcos García</h3>
                             <span>Cliente verificado</span>
                         </div>
+
                     </div>
-                    <div class="estrellas">★★★★★</div>
+
+                    <div class="estrellas">
+                        ★★★★★
+                    </div>
+
                     <p>
                         "Excelente atención y muy buenos instrumentos.
                         Me asesoraron para elegir mi primera guitarra
                         eléctrica y quedé muy conforme."
                     </p>
+
                 </article>
 
+
                 <article class="resena-card destacada">
+
                     <div class="resena-top">
-                        <div class="avatar">LF</div>
+
+                        <div class="avatar">
+                            LF
+                        </div>
 
                         <div>
                             <h3>Lucía Fernández</h3>
                             <span>Cliente verificado</span>
                         </div>
+
                     </div>
-                    <div class="estrellas">★★★★★</div>
+
+                    <div class="estrellas">
+                        ★★★★★
+                    </div>
+
                     <p>
                         "La guitarra llegó impecable y en el tiempo acordado.
                         La calidad del instrumento superó mis expectativas.
                         ¡Volveré a comprar!"
                     </p>
+
                 </article>
 
+
                 <article class="resena-card">
+
                     <div class="resena-top">
-                        <div class="avatar">DM</div>
+
+                        <div class="avatar">
+                            DM
+                        </div>
+
                         <div>
                             <h3>Diego Martínez</h3>
                             <span>Cliente verificado</span>
                         </div>
+
                     </div>
-                    <div class="estrellas">★★★★★</div>
+
+                    <div class="estrellas">
+                        ★★★★★
+                    </div>
+
                     <p>
                         "Muy buena variedad de guitarras y accesorios.
                         La atención fue excelente y me ayudaron a encontrar
                         exactamente lo que estaba buscando."
                     </p>
+
                 </article>
 
+
                 <article class="resena-card">
+
                     <div class="resena-top">
-                        <div class="avatar">CV</div>
+
+                        <div class="avatar">
+                            CV
+                        </div>
+
                         <div>
                             <h3>Carolina Vega</h3>
                             <span>Cliente verificado</span>
                         </div>
+
                     </div>
-                    <div class="estrellas">★★★★☆</div>
+
+                    <div class="estrellas">
+                        ★★★★☆
+                    </div>
+
                     <p>
                         "Muy buena experiencia. Compré una guitarra acústica
                         y estoy muy contenta con la compra."
                     </p>
+
                 </article>
+
             </div>
+
         </section>
+
     </main>
+
+
+    <!-- =========================
+         CONTACTO
+    ========================== -->
 
     <section class="contacto" id="contacto">
 
         <div class="contacto-info">
-            <span class="contacto-subtitulo">HABLEMOS</span>
-            <h2>¿Buscás tu<br><strong>próxima guitarra?</strong></h2>
+
+            <span class="contacto-subtitulo">
+                HABLEMOS
+            </span>
+
+            <h2>
+                ¿Buscás tu<br>
+                <strong>próxima guitarra?</strong>
+            </h2>
+
             <p>
                 Escribinos y te ayudamos a encontrar el instrumento
                 que mejor se adapte a vos.
             </p>
+
+
             <div class="dato">
+
                 <div>
                     <small>VISITANOS</small>
                     <p>Buenos Aires, Argentina</p>
                 </div>
+
             </div>
+
+
             <div class="dato">
+
                 <div>
                     <small>EMAIL</small>
                     <p>info@guitarshop.com</p>
                 </div>
+
             </div>
+
+
             <div class="dato">
+
                 <div>
                     <small>WHATSAPP</small>
                     <p>+54 9 11 1234-5678</p>
                 </div>
+
             </div>
+
         </div>
 
-        <form action="https://formsubmit.co/mtraiano76@gmail.com" method="POST" class="form-contact formulario">
-            <div class="campo">
-                <label for="nombre">NOMBRE</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-            </div>
-            <div class="campo">
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
-            </div>
-            <div class="campo">
-                <label for="motivo">¿QUÉ ESTÁS BUSCANDO?</label>
-                <select id="motivo" name="motivo">
-                    <option value="">Seleccioná una opción</option>
-                    <option>Guitarra eléctrica</option>
-                    <option>Guitarra acústica</option>
-                    <option>Guitarra clásica</option>
-                    <option>Bajo</option>
-                    <option>Accesorios</option>
-                    <option>Otro</option>
-                </select>
-            </div>
-            <div class="campo">
-                <label for="mensaje">MENSAJE</label>
 
-                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos qué instrumento estás buscando..."
-                    required></textarea>
+        <!-- FORMULARIO -->
+
+        <form
+            action="https://formsubmit.co/mtraiano76@gmail.com"
+            method="POST"
+            class="form-contact formulario">
+
+            <div class="campo">
+
+                <label for="nombre">
+                    NOMBRE
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Tu nombre"
+                    required>
+
             </div>
+
+
+            <div class="campo">
+
+                <label for="email">
+                    EMAIL
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="tu@email.com"
+                    required>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="motivo">
+                    ¿QUÉ ESTÁS BUSCANDO?
+                </label>
+
+                <select id="motivo" name="motivo">
+
+                    <option value="">
+                        Seleccioná una opción
+                    </option>
+
+                    <option>
+                        Guitarra eléctrica
+                    </option>
+
+                    <option>
+                        Guitarra acústica
+                    </option>
+
+                    <option>
+                        Guitarra clásica
+                    </option>
+
+                    <option>
+                        Bajo
+                    </option>
+
+                    <option>
+                        Accesorios
+                    </option>
+
+                    <option>
+                        Otro
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="mensaje">
+                    MENSAJE
+                </label>
+
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="5"
+                    placeholder="Contanos qué instrumento estás buscando..."
+                    required></textarea>
+
+            </div>
+
+
             <button type="submit">
+
                 ENVIAR MENSAJE
+
                 <span>→</span>
+
             </button>
+
         </form>
+
     </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
 
     <footer>
     </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT MENU
+    ========================== -->
+
+    <script>
+
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        menuToggle.addEventListener("click", () => {
+
+            navLinks.classList.toggle("active");
+
+        });
+
+
+        // Cerrar menú al seleccionar una opción
+
+        const links = document.querySelectorAll(".nav-links a");
+
+        links.forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                navLinks.classList.remove("active");
+
+            });
+
+        });
+
+    </script>
+
 </body>
 
 </html>
